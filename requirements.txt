@@ -1,0 +1,5 @@
+apistar==0.5.40
+apistar-sqlalchemy==0.3.1
+click==6.7
+factory-boy==2.11.1
+sqlalchemy==1.2.9
