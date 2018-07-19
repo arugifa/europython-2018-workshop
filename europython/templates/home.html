@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Blog Homepage</title>
+    </head>
+    <body>
+        {% if articles %}
+        <h1>Articles</h1>
+
+        <ul class="article-list">
+            {% for article in articles %}
+            <li>
+                <a class="article-list__title" href="/articles/{{ article.id }}/">
+                    {{ article.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <h1>No Article Yet!</h1>
+        {% endif %}
+    </body>
+</html>

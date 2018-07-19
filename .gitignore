@@ -1,0 +1,37 @@
+# Editors #
+
+# VIM Swap Files
+*.swp
+
+# IntelliJ Project Directories
+.idea
+
+# Apple Desktop Services Store
+.DS_Store
+
+# Visual Studio Code
+.vscode
+
+
+# Python #
+
+# Python Bytecode
+*.pyc
+__pycache__/
+
+# Python Packaging
+*.egg-info/
+*.eggs
+build/
+
+# Python Testing
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+tests/screenshots/
+venv/
+
+# Vagrant
+.vagrant/
+ubuntu-bionic-18.04-cloudimg-console.log
