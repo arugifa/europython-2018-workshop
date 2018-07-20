@@ -55,7 +55,10 @@ demo_help = {
 @task(help=demo_help)
 def demo(ctx, debug=False):
     """Launch the demo web API in foreground."""
-    raise NotImplementedError
+    if debug:
+        docker_compose_run('sh')
+    else:
+        run('docker-compose up')
 
 
 test_help = {
@@ -66,13 +69,19 @@ test_help = {
 @task(help=test_help)
 def test(ctx, debug=False):
     """Execute the test suite."""
-    raise NotImplementedError
+    if debug:
+        command = f'tox -e {DEV_ENV} && . {ACTIVATE_DEV} && sh'
+        docker_compose_run(command)
+    else:
+        command = f'tox -e {PYTHON_TESTS}'
+        docker_compose_run(command)
 
 
 @task
 def virtualenv(ctx):
     """Install web application and its dependencies locally."""
-    raise NotImplementedError
+    command = f'tox -e {LOCAL_ENV}'
+    run(command)
 
 
 # Helpers
