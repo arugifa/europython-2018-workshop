@@ -26,7 +26,7 @@ def client(app):
 
 
 @pytest.fixture(scope='session')
-def config(tmpdir_factory):
+def config():
     """Return applicaton's configuration.
 
     :rtype: europython.config.DefaultConfig
