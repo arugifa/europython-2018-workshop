@@ -18,7 +18,7 @@ class DefaultConfig:
     """
 
     #: How to connect to the database.
-    DATABASE_URL = 'sqlite:///:memory:'
+    DATABASE_URL = 'postgresql://user:password@localhost/database'
 
     def __init__(self, **kwargs):
         for setting, default_value in self.__class__.__dict__.items():

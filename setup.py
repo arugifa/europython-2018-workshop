@@ -24,6 +24,7 @@ setup(
         'apistar-sqlalchemy>=0.3',
         'click>=6.7',
         'factory-boy>=2.11',
+        'psycopg2>=2.7',
         'sqlalchemy>=1.2',
     ],
 )

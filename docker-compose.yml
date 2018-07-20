@@ -1,0 +1,24 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    image: europython/workshop:test
+    command: demo
+    environment:
+      DATABASE_URL: postgresql://john_doe:foobar@database/europython
+      SERVER_PORT: ${EUROPYTHON_SERVER_PORT}
+    ports:
+      - ${EUROPYTHON_SERVER_PORT}:${EUROPYTHON_SERVER_PORT}
+    volumes:
+      - .:/src
+    depends_on:
+      - database
+
+  database:
+    image: postgres:11-alpine
+    environment:
+      POSTGRES_USER: john_doe
+      POSTGRES_PASSWORD: foobar
+      POSTGRES_DB: europython

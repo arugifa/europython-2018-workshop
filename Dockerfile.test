@@ -1,0 +1,10 @@
+# -*- mode: dockerfile -*-
+# vi: set ft=dockerfile :
+
+FROM europython/workshop:latest
+
+RUN apk add --update \
+    # Acceptance Tests
+    chromium chromium-chromedriver
+
+RUN pip install tox
