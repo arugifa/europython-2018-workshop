@@ -6,8 +6,8 @@ Material for my workshop at EuroPython 2018.
 
 Every commit of the repository corresponds to a different step of the workshop.
 
-.. image:: https://travis-ci.org/arugifa/ep2018-workshop.svg?branch=master
-    :target: https://travis-ci.org/arugifa/ep2018-workshop
+.. image:: https://travis-ci.org/arugifa/europython-2018-workshop.svg?branch=master
+    :target: https://travis-ci.org/arugifa/europython-2018-workshop
 
 
 Getting Started
