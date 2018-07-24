@@ -14,7 +14,7 @@ To install Python dependencies::
 
     virtualenv -p python3.6 venv
     . venv/bin/activate
-    pip install -r requirements-test.txt
+    pip install -r requirements.txt
 
 To run tests::
 
