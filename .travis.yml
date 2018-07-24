@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install invoke docker-compose
+sudo: required
+services:
+  - docker
+script:
+  - invoke build
+  - invoke test
+env:
+  - EUROPYTHON_SERVER_PORT=5000

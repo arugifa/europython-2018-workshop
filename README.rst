@@ -4,6 +4,9 @@ Writing and Running Tests in Docker
 
 Material for my workshop at EuroPython 2018.
 
+.. image:: https://travis-ci.org/arugifa/ep2018-workshop.svg?branch=master
+    :target: https://travis-ci.org/arugifa/ep2018-workshop
+
 Getting Started
 ===============
 
